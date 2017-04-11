@@ -1,0 +1,95 @@
+body {
+	background-image:url(http://solarscroller.rhettforbes.com/img/stars.jpg);
+	background-repeat: repeat;
+	background-color:#000;
+	color:#fff;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	-webkit-animation: sky 82s linear infinite;
+	-moz-animation: sky 82s linear infinite;
+	-ms-animation: sky 82s linear infinite;
+	-o-animation: sky 82s linear infinite;
+	animation: sky 82s linear infinite;} 
+	 	
+svg { float:left;}
+svg path {fill:rgba(69, 97, 109, 0.25);}
+
+#lcars { display:inline-block;
+position:fixed;}
+
+aside {
+	background-color: transparent;
+	color: white;
+	height: calc(100vh - 10px);
+	padding: 5px;
+	margin:0;
+	width: calc(100vw - 10px);
+	position: absolute;
+	transform: translate(-100%);
+	transition: all 0.25s;
+	}
+	.open aside { transform: translate(0);}
+.top-corner, 
+.bottom-cornor	{ 
+	height:100px; 
+	width:100%; 
+	background-color:transparent;
+	display:none;}	
+.info {
+    background-color: rgba(69, 97, 109, 0.25);
+    height: calc(100vh - 120px);
+    margin: 55px 0;
+    width: 100%;}	
+	
+main {
+    height: calc(100vh - 10px);
+    margin: 5px;
+	display:block;
+    transform: translate(0px);
+    transition: all 0.25s;
+    width: calc(100vw - 10px);}
+	.open main {
+		width: calc(100vw - 10px);
+		transform: translate(0);}
+.top-bar, 
+.bottom-bar { 
+	height:50px; 
+	width:100%; 
+	background-color:rgba(69, 97, 109, 0.25); }
+.bottom-bar { 
+	position:absolute; 
+	bottom:0;}			
+@media only screen and (min-width: 600px) {
+aside {
+	width: 300px;
+	transform: translate(-305px);}
+.top-corner, 
+.bottom-cornor { display:block;}
+.open main {
+	width: calc(100vw - 315px);
+	transform: translate(305px);}
+.info {
+    height: calc(100vh - 220px);
+    margin: 5px 0;
+    width: calc(100% - 50px);}	
+}
+@media only screen and (min-width: 1024px) {
+.navToggle { display:none;}
+aside {transform: translate(0);}
+main {
+	width: calc(100vw - 315px);
+	transform: translate(305px);}
+}
+@keyframes sky {
+ 50% {background-position: 600px 0px;}
+ 100% {background-position: 1200px 0px;}
+}
+@-moz-keyframes sky {
+ 50% {background-position: 600px 0px;}
+ 100% {background-position: 1200px 0px;}
+}
+@-webkit-keyframes sky {
+ 50% {background-position: 600px 0px;}
+ 100% {background-position: 1200px 0px;}
+}

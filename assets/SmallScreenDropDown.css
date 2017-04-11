@@ -1,0 +1,28 @@
+        #smalllogoutButton
+        {
+            width: 100%;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            margin-bottom: 5px;
+        }
+
+        #smallModPageButton
+        {
+            width: 100%;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+        }
+
+        #smallusernameDisplayLabel
+        {
+            color: white;
+        }
+
+         #Colormsg
+         {
+             color: white;
+         }

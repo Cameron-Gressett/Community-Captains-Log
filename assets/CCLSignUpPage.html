@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Sign Up - Community Captain's Log</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="The Community Captain's Log Sign Up Page. Create a user account and check out our FAQ page to begin your final frontier.'">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<script src="./tempo-2.0/tempo.js" type="text/javascript"></script>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	 crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="CCL.css">
+	<link rel="stylesheet" type="text/css" href="CCLSignUpPageStyle.css">
+	<link rel="stylesheet" href="css/lcars.css">
+</head>
+
+<body>
+
+
+
+
+
+
+	<div id="EntirePage" class="lcars-container container">
+
+
+
+		<div class="row">
+			<a type="button" href="http://localhost:8080/CCL.html"><img class="col-12" alt="Community Captain's Log" id="largeHeaderTop" src="largeHeaderTop.png"><img class="col-12" alt="Community Captain's Log" id="smallHeaderTop" src="smallHeaderTop.png"></a>
+		</div>
+		<div class="row" style="height:23.4px;">
+			<img class="col-xs-2" id="largeHeaderBottom" src="largeHeaderBottom.png" style="height:23.4px; width:104px;  padding-left:0px;">
+			
+			<div style="max-height: 20px; ">
+				<div class="lcars-CCLmedskyblue-bg " id="topDecBar">
+
+				</div>
+			</div>
+
+		</div>
+		<div id="errorSignUpMessage" class="alert" role="alert">
+			<ul id="signupErrorList" style=" list-style-type: none;">
+				<li data-template>
+					<p id="Colormsg">{{msg}}</p>
+				</li>
+			</ul>
+		</div>
+
+
+
+
+		<!-- TOP ROW
+			=========================================================== -->
+		<div class="lcars-row spaced bodyPosAdj">
+
+			<!-- TOP LEFT ELBOW
+			=========================================================== -->
+			<div class="lcars-column u-1-8 lcars-elbow left bottom lcars-CCLdarkskyblue-bg" style="border-top-left-radius:0px; ">
+				<ul class="lcars-menu">
+					<li class="lcars-CCLdarkskyblue-bg tall" style="height: 80px;">
+					</li>
+				</ul>
+			</div>
+
+			<!-- TOP DIVIDER AND BUTTONS
+			=========================================================== -->
+			<div class="lcars-column u-6-8 lcars-divider lcars-CCLd-CCL-divide">
+				<div class="lcars-row">
+					<div class="lcars-column u-1-2">
+					</div>
+					<div class="lcars-column u-1-2">
+						<h1 class="right" id="SignupLabel">Signup</h1>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- TOP RIGHT ELBOW
+			=========================================================== -->
+			<div class="lcars-column u-1-8 lcars-elbow right bottom lcars-CCLlightorange-bg">
+				<ul class="lcars-menu">
+					<li class="lcars-CCLlightorange-bg tall" style="width: 2000%; height: 80px;">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="lcars-row bodyPosAdj">
+
+			<!-- Left MENU
+			=========================================================== -->
+			<div class="lcars-column u-1-8">
+				<ul class="lcars-menu">
+					<li class="lcars-CCLmeddarkskyblue-bg">
+						<a href="#"></a>
+					</li>
+					<li class="lcars-CCLmedskyblue-bg tall large-gap"></li>
+					<li class="lcars-CCLlightorange-bg"></li>
+					<li class="lcars-CCLlightorange-bg tall"></li>
+					<li class="lcars-CCLlightorange-bg"></li>
+				</ul>
+			</div>
+
+			<!-- CENTER SECTION
+			=========================================================== -->
+			<div class="lcars-column u-6-8">
+				<div class="lcars-row">
+					<div class="form-group">
+
+						<label for="signUpLabelUsername1">Username</label>
+						<input type="email" class="form-control" id="signUpInputUsername1" aria-describedby="emailHelp" placeholder="Username">
+
+					</div>
+
+					<div class="form-group">
+
+						<label for="emailLabel">Email</label>
+						<input type="email" class="form-control" name="email" id="emailInput" placeholder="Email">
+
+					</div>
+
+					<div class="form-group">
+
+						<label for="signUpInputPassword1">Password</label>
+						<input type="password" class="form-control" id="signUpInputPassword1" placeholder="Password">
+
+					</div>
+
+					<div class="form-group">
+
+						<label for="passwordConfirm">Confirm Password</label>
+						<input type="password" class="form-control" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm Password">
+
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Right MENU
+			=========================================================== -->
+			<div class="lcars-column u-1-8">
+				<ul class="lcars-menu" style="padding-left: 22px;width: 2000%">
+					<li class="lcars-CCLlightorange-bg" style="width: 100%;"></li>
+					<li class="lcars-CCLlightorange-bg tall large-gap"></li>
+					<li class="lcars-CCLmeddarkskyblue-bg tall" style="width: 100%"></li>
+					<li class="lcars-CCLlightskyblue-bg" style="width: 100%"></li>
+					<li class="lcars-CCLmedskyblue-bg " style="width: 100%"></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- BOTTOM ROW
+			=========================================================== -->
+		<div class="lcars-row spaced bodyPosAdj">
+
+			<!-- BOTTOM LEFT ELBOW
+			=========================================================== -->
+			<div class="lcars-column u-1-8 lcars-elbow left top lcars-CCLlightorange-bg">
+			</div>
+
+			<!-- BOTTOM DIVIDER AND BUTTONS
+			=========================================================== -->
+			<div class="lcars-column u-6-8 lcars-divider bottom lcars-CCLd-CCL-divide">
+				<div class="lcars-row">
+					<div class="lcars-button radius lcars-CCLmeddarkorange-bg" id="signUserUp">
+						Submit
+					</div>
+				</div>
+			</div>
+
+			<!-- BOTTOM RIGHT ELBOW
+			=========================================================== -->
+			<div class="lcars-column u-1-8 lcars-elbow right top lcars-CCLdarkskyblue-bg">
+				<ul class="lcars-menu">
+					<li class="lcars-CCLdarkskyblue-bg tall" style="width: 2000%; height: 80px;">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="CCLSignUpPageScript.js"></script>
+
+</body>
+
+</html>

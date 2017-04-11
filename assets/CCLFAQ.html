@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>FAQ - Community Captain's Log</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Community Captain's Log website FAQ page for new users.">
+
+    <link rel="shortcut icon" href="CCLlogo.ico" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="./tempo-2.0/tempo.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="CCL.css">
+    <link rel="stylesheet" type="text/css" href="CCLFAQStyle.css">
+    <link rel="stylesheet" href="css/lcars.css">
+
+    <script src="CCL.js" type="text/javascript"></script>
+    <script src="CCLFAQScript.js" type="text/javascript"></script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+    <div class="lcars-container container" style="height:100vh" id="LcarsMenu">
+
+
+
+
+
+
+        <div class="row">
+            <a type="button" href="http://localhost:8080/CCL.html"><img class="col-12" alt="Community Captain's Log" id="largeHeaderTop" src="largeHeaderTop.png"><img class="col-12"
+                    alt="Community Captain's Log" id="smallHeaderTop" src="smallHeaderTop.png"></a>
+        </div>
+        <div class="row" style="height:23.4px;">
+            <img class="col-xs-2" id="largeHeaderBottom" src="largeHeaderBottom.png" style="height:23.4px; width:104px;  padding-left:0px;">
+
+
+            <!--Login-->
+            <label class="col-1 largeBottomHeaderHeight lcars-CCLdarkskyblue-bg loginElementLarge largeScreenInfo" id="usernameLabel"><span id="usernameLblSpan"> Username </span></label>
+            <input class="col-2 largeBottomHeaderHeight lcars-CCLmedorange-bg loginElementLarge largeScreenInfo" id="usernameInput" type=""
+                name="" placeholder="Username">
+
+            <label class="col-1 largeBottomHeaderHeight lcars-CCLdarkskyblue-bg loginElementLarge largeScreenInfo" id="passwordLabel"><span id="passwordLblSpan"> Password </span></label>
+            <input class="col-2 largeBottomHeaderHeight lcars-CCLmedorange-bg loginElementLarge largeScreenInfo" id="passwordInput" type="password"
+                name="" placeholder="Password">
+
+            <button type="button" class="col-1 lcars-button lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+                id="loginButton"><span id="loginLblSpan">Login</span></button>
+
+            <button type="button" class="col-1 lcars-button lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+                id="signupButton"><span id="signupLblSpan">Sign Up</span></button>
+
+
+            <button type="button" class="col-2 lcars-button right lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+                id="forgotPassLink"><span id="forgotpasswordLblSpan">Forgot Password</span></button>
+
+
+            <!--Logout-->
+            <span class="col-2 logoutElementLarge largeBottomHeaderHeight largeScreenInfo" id="usernameDisplayLabel"></span>
+
+            <button id="logoutButton" type="button" class="col-2 logoutElementLarge  largeBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg largeScreenInfo"><span id="LogOutText">Log Out</span></button>
+
+            <button id="ModPageButton" type="button" class="col-2 largeBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg largeScreenInfo"
+                style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;"><span id="LogOutText">Mod Page</span></button>
+
+
+            <div class="btn-group col-xs-7 largeBottomHeaderHeight smallScreenDropDown" style="padding-top: 2px;">
+                <ul id="multicol-menu" class="nav">
+                    <li class="dropdown largeBottomHeaderHeight">
+                        <a href="#" class="btn lcars-CCLmeddarkorange-bg largeBottomHeaderHeight dropdown-toggle" data-toggle="dropdown" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px; width:100%;  overflow: hidden;">
+                            <p id="smallDropDownLblSpan">User <img src="caret.png" style="height:3px; position:relative; bottom:2px;"></p>
+                        </a>
+                        <ul class="lcars-CCLdarkblue-bg smallScreenDropDownBorder dropdown-menu " id="icons">
+
+                            <li class="pickList"><label class="col-1 smallBottomHeaderHeight loginElementSmall smallScreenDropDown" id="smallusernameLabel"><span class="">Username</span></label></li>
+                            <li class="pickList"><input class="col-2 smallBottomHeaderHeight lcars-CCLmedorange-bg loginElementSmall smallScreenDropDown"
+                                    id="smallusernameInput" type="" name="" placeholder="Username"></li>
+                            <li class="pickList"><label class="col-1 smallBottomHeaderHeight loginElementSmall smallScreenDropDown" id="smallpasswordLabel"><span class="">Password</span></label></li>
+                            <li class="pickList"><input class="col-2 smallBottomHeaderHeight lcars-CCLmedorange-bg loginElementSmall smallScreenDropDown"
+                                    id="smallpasswordInput" type="password" name="" placeholder="Password"></li>
+                            <li class="pickList"><button type="button" class="btn col-1 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+                                    id="smallloginButton"><span class="smallScreenSpanText">Log In</span></button></li>
+                            <li class="pickList"><button type="button" class="btn col-1 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+                                    id="smallsignupButton"><span class="smallScreenSpanText">Sign Up</span></button></li>
+                            <li class="pickList"><button class="btn col-2 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+                                    id="smallforgotPassLink"><span class="smallScreenSpanText">Forgot Password</span></button></li>
+
+                            <li class="pickList"><span class="col-2 logoutElementSmall smallBottomHeaderHeight" id="smallusernameDisplayLabel"></span></li>
+                            <li class="pickList"><button id="smalllogoutButton" type="button" class="btn col-2 logoutElementSmall  smallBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg"><span class="smallScreenSpanText">Log Out</span></button></li>
+                            <li class="pickList"><button id="smallModPageButton" type="button" class="btn col-2 smallBottomHeaderHeight lcars-button right lcars-CCLmeddarkorange-bg"><span class="smallScreenSpanText">Mod Page</span></button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div id="errorMessage" class="alert" role="alert">
+            <ul id="pageErrorList" style=" list-style-type: none;">
+                <li data-template>
+                    <p id="Colormsg">{{msg}}</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="successMessage" class="alert " role="alert">
+            <ul id="pageSuccessList" style=" list-style-type: none;">
+                <li data-template>
+                    <p id="Colormsg">{{msg}}</p>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- TOP ROW
+			=========================================================== -->
+        <div class="lcars-row spaced bodyPosAdj">
+
+            <!-- TOP LEFT ELBOW
+			=========================================================== -->
+            <div class="lcars-column u-1-8 lcars-elbow left bottom lcars-CCLdarkskyblue-bg" style="border-top-left-radius:0px; ">
+                <ul class="lcars-menu">
+                    <li class="lcars-CCLdarkskyblue-bg tall" style="height: 80px;">
+                    </li>
+                </ul>
+            </div>
+
+            <!-- TOP DIVIDER AND BUTTONS
+			=========================================================== -->
+            <div class="lcars-column u-6-8 lcars-divider lcars-CCLd-CCL-divide">
+                <div class="lcars-row">
+                    <div class="lcars-column u-2-2">
+                    </div>
+
+                    <h3 style="color:white; margin-left: 8px;">FAQ</h3>
+                    <div class="lcars-column u-2-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOP RIGHT ELBOW
+			=========================================================== -->
+            <div class="lcars-column u-1-8 lcars-elbow right bottom lcars-CCLlightorange-bg">
+                <ul class="lcars-menu">
+                    <li class="lcars-CCLlightorange-bg tall" style="width: 2000%; height: 80px;">
+                    </li>
+                </ul>
+                <li class="lcars-CCLlightorange-bg" style="position: relative; left: 22px; width: 2000px; height: 25px; color: #ffc200;"></li>
+                <li class="lcars-CCLlightorange-bg" style="position: relative; left: 22px; width: 2000px; height: 25px; margin-top: 5px; color: #ffc200"></li>
+            </div>
+        </div>
+
+        <div class="lcars-row bodyPosAdj">
+
+            <!-- Left MENU
+			=========================================================== -->
+            <div class="lcars-column u-1-8">
+                <ul class="lcars-menu">
+                    <li class="lcars-CCLmeddarkskyblue-bg">
+                        <a href="#"></a>
+                    </li>
+                    <li class="lcars-CCLmedskyblue-bg tall large-gap"></li>
+                    <li class="lcars-CCLlightorange-bg"></li>
+                    <li class="lcars-CCLlightorange-bg"></li>
+                    <li class="lcars-CCLlightorange-bg"></li>
+                    <li class="lcars-CCLlightorange-bg tall"></li>
+                    <li class="lcars-CCLlightorange-bg"></li>
+                </ul>
+            </div>
+
+            <!-- CENTER SECTION
+			=========================================================== -->
+            <div class="lcars-column u-6-8">
+
+                <div class="lcars-row FAQ" style="max-width: 100%; overflow-y: scroll; overflow-x: hidden; height: 310px; width: 100%;">
+                    <div id="logNameDiv">
+                    </div>
+                    <ul id="FAQArea" style="height: 100%; width: 100%;">
+                        <li data-template style="margin-left: 10px;">
+                            <p>Q:<br>{{Q}}</p><br>
+                            <p>A:<br>{{A}}</p><br>
+                            <br><br><br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lcars-column u-1-8" style="float: left;">
+                <div id="logTimes" class="form-group">
+
+                </div>
+            </div>
+
+
+
+            <!-- Right MENU
+			=========================================================== -->
+            <div class="lcars-column u-1-8">
+                <ul class="lcars-menu" style="padding-left: 22px;width: 2000%">
+                    <li class="lcars-CCLlightorange-bg" style="width: 100%;"></li>
+                    <li class="lcars-CCLlightorange-bg tall large-gap"></li>
+                    <li class="lcars-CCLmeddarkskyblue-bg tall" style="width: 100%"></li>
+                    <li class="lcars-CCLlightskyblue-bg" style="width: 100%"></li>
+                    <li class="lcars-CCLmedskyblue-bg " style="width: 100%"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BOTTOM ROW
+			=========================================================== -->
+        <div class="lcars-row spaced bodyPosAdj">
+
+            <!-- BOTTOM LEFT ELBOW
+			=========================================================== -->
+            <div class="lcars-column u-1-8 lcars-elbow left top lcars-CCLlightorange-bg">
+            </div>
+
+            <!-- BOTTOM DIVIDER AND BUTTONS
+			=========================================================== -->
+            <div class="lcars-column u-6-8 lcars-divider bottom lcars-CCLd-CCL-divide">
+                <div class="lcars-row">
+
+                </div>
+            </div>
+
+            <!-- BOTTOM RIGHT ELBOW
+			=========================================================== -->
+            <div class="lcars-column u-1-8 lcars-elbow right top lcars-CCLdarkskyblue-bg">
+                <ul class="lcars-menu">
+                    <li class="lcars-CCLdarkskyblue-bg tall" style="width: 2000%; height: 80px;">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

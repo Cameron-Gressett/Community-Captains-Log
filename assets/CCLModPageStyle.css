@@ -1,0 +1,145 @@
+
+.container
+{
+	width: 1020px;
+	height:100vh;
+	margin: 0px auto;
+}
+
+#bodyDiv
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+#collectionContentContainerDiv
+{
+	width: 60vw;
+	max-width: 895px;
+	margin-left: 80px; 
+	height: 570px; 
+	overflow-x: hidden;
+	border-top: 10px groove #ffc200;
+	border-right: 10px groove #ffc200;
+	border-bottom: 20px groove #ffc200;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;				
+}
+
+#replaceContentButton
+{
+	float: left; 
+	width: 170px;
+	margin-left: 10px; 
+	margin-top: 3px;
+}
+
+#MuteUserButton
+{
+	float: left; 
+	margin-left: 2px; 
+	margin-top: 3px;
+}
+
+#unflagButton
+{
+	float: left; 
+	margin-top: 3px;
+}
+
+#pageTitle
+{
+	float:left;
+	position: relative;
+	top:25px;
+}
+
+#userDisplayLabel
+{       
+	float: right; 
+	margin-right:15px;
+	position: relative;
+	top:5px;      
+}
+
+#accessDeniedMsg
+{
+	color:white;
+}
+
+#bodyDiv
+{
+	height:90%;
+	overflow: scroll;
+}
+
+#successMessage
+{
+	width: 100%; 
+	text-align: center;   
+	margin-bottom: 10px;  
+	margin-top: 10px;
+	display:none; 
+}
+
+#logInstanceCard
+{
+	width: 60vw;
+	max-width:895px;
+	min-height: 350px;
+	max-height: 2000px;
+	display: table;
+	word-break: break-all;
+	word-wrap: break-word;
+	margin-bottom: 20px;
+}
+
+#MidDecBar
+{
+	width: 60vw;
+	max-width: 895px;
+	float: left;
+	margin-left: 2px;
+	height: 20px;
+}
+
+#topDecBar
+{
+	width: 60vw;
+	max-width: 895px;
+	margin-left: 2px;
+	height: 20px;
+	position: relative;
+	left :91px;
+}
+
+
+@media only screen and (max-width:321px)
+{
+	#unflagButton
+	{
+		font-size: 10px;
+	}
+	#MuteUserButton
+	{
+		font-size: 10px;
+	}
+	#replaceContentButton
+	{
+		font-size: 10px;
+		margin-left: 5px;
+		width: 140px;
+		float: left;
+	}
+}
+@media only screen and (max-width:669px)
+{
+	#replaceContentButton
+	{
+		margin-left: 0px;
+		float: left;
+	}
+}

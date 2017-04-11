@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Log - Community Captain's Log</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="A Star Trek inspired fan-fiction website designed to bring everyones ideas to the story. On each Captain's Log the users will vote for what happens next.">
+
+	<link rel="shortcut icon" href="CCLlogo.ico" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<script src="./tempo-2.0/tempo.js" type="text/javascript"></script>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	 crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="CCL.css">
+	<link rel="stylesheet" type="text/css" href="CCLInitLogPageStyle.css">
+	<link rel="stylesheet" href="css/lcars.css">
+
+	<script src="CCL.js"></script>
+	<script src="CCLInitLogPageScript.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row" style="overflow:initial;">
+			<a type="button" href="http://localhost:8080/CCL.html"><img class="col-12" alt="Community Captain's Log" id="largeHeaderTop" src="largeHeaderTop.png"><img class="col-12" alt="Community Captain's Log"
+				 id="smallHeaderTop" src="smallHeaderTop.png"></a>
+		</div>
+		<div class="row" style="height:23.4px; overflow:initial;">
+			<img class="col-xs-2" id="largeHeaderBottom" src="largeHeaderBottom.png" style="height:23.4px; width:104px;  padding-left:0px;">
+
+
+			<!--Login-->
+			<label class="col-1 largeBottomHeaderHeight lcars-CCLdarkskyblue-bg loginElementLarge largeScreenInfo" id="usernameLabel"><span id="usernameLblSpan"> Username </span></label>
+			<input class="col-1 largeBottomHeaderHeight lcars-CCLmedorange-bg loginElementLarge largeScreenInfo" id="usernameInput" type=""
+			 name="" placeholder="Username">
+
+			<label class="col-1 largeBottomHeaderHeight lcars-CCLdarkskyblue-bg loginElementLarge largeScreenInfo" id="passwordLabel"><span id="passwordLblSpan"> Password </span></label>
+			<input class="col-1 largeBottomHeaderHeight lcars-CCLmedorange-bg loginElementLarge largeScreenInfo" id="passwordInput" type="password"
+			 name="" placeholder="Password">
+
+			<button type="button" class="col-1 lcars-button lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+			 id="loginButton"><span id="loginLblSpan">Login</span></button>
+
+			<button type="button" class="col-1 lcars-button lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+			 id="signupButton"><span id="signupLblSpan">Sign Up</span></button>
+
+
+			<button type="button" class="col-2 lcars-button right lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+			 id="forgotPassLink"><span id="forgotpasswordLblSpan">Forgot Password</span></button>
+
+
+			<!--Logout-->
+			<span class="col-2 logoutElementLarge largeBottomHeaderHeight largeScreenInfo" id="usernameDisplayLabel"></span>
+
+			<button id="logoutButton" type="button" class="col-2 logoutElementLarge  largeBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg largeScreenInfo"><span id="LogOutText">Log Out</span></button>
+
+			<button id="ModPageButton" type="button" class="col-2 largeBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg largeScreenInfo"
+			 style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;"><span id="LogOutText">Mod Page</span></button>
+
+
+			<div class="btn-group col-xs-7 largeBottomHeaderHeight smallScreenDropDown" style="padding-top: 2px;overflow: initial;">
+				<ul id="multicol-menu" class="nav" style="overflow: initial;">
+					<li class="dropdown largeBottomHeaderHeight" style="overflow: initial;">
+						<a href="#" class="btn lcars-CCLmeddarkorange-bg largeBottomHeaderHeight dropdown-toggle" data-toggle="dropdown" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px; width:100%;overflow: initial;">
+							<p id="smallDropDownLblSpan">User <img src="caret.png" style="height:3px; position:relative; bottom:2px;"></p>
+						</a>
+						<ul class="lcars-CCLdarkblue-bg smallScreenDropDownBorder dropdown-menu " id="icons">
+
+							<li class="pickList" style="overflow: initial;"><label class="col-1 smallBottomHeaderHeight loginElementSmall smallScreenDropDown" style="overflow: initial;" id="smallusernameLabel"><span class="" style="overflow: initial;">Username</span></label></li>
+							<li class="pickList" style="overflow: initial;"><input style="overflow: initial;" class="col-2 smallBottomHeaderHeight lcars-CCLmedorange-bg loginElementSmall smallScreenDropDown"
+								 id="smallusernameInput" type="" name="" placeholder="Username"></li>
+							<li class="pickList" style="overflow: initial;"><label style="overflow: initial;" class="col-1 smallBottomHeaderHeight loginElementSmall smallScreenDropDown" id="smallpasswordLabel"><span class="" style="overflow: initial;">Password</span></label></li>
+							<li class="pickList" style="overflow: initial;"><input style="overflow: initial;" class="col-2 smallBottomHeaderHeight lcars-CCLmedorange-bg loginElementSmall smallScreenDropDown"
+								 id="smallpasswordInput" type="password" name="" placeholder="Password"></li>
+							<li class="pickList" style="overflow: initial;"><button style="overflow: initial;" type="button" class="btn col-1 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+								 id="smallloginButton"><span style="overflow: initial;" class="smallScreenSpanText">Log In</span></button></li>
+							<li class="pickList" style="overflow: initial;"><button style="overflow: initial;" type="button" class="btn col-1 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+								 id="smallsignupButton"><span style="overflow: initial;" class="smallScreenSpanText">Sign Up</span></button></li>
+							<li class="pickList" style="overflow: initial;"><button style="overflow: initial;" class="btn col-2 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+								 id="smallforgotPassLink"><span style="overflow: initial;" class="smallScreenSpanText">Forgot Password</span></button></li>
+
+							<li class="pickList" style="overflow: initial;"><span style="overflow: initial;" class="col-2 logoutElementSmall smallBottomHeaderHeight" id="smallusernameDisplayLabel"></span></li>
+							<li class="pickList" style="overflow: initial;"><button style="overflow: initial;" id="smalllogoutButton" type="button" class="btn col-2 logoutElementSmall  smallBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg"><span style="overflow: initial;" class="smallScreenSpanText">Log Out</span></button></li>
+							<li class="pickList" style="overflow: initial;"><button style="overflow: initial;" id="smallModPageButton" type="button" class="btn col-2 smallBottomHeaderHeight lcars-button right lcars-CCLmeddarkorange-bg"><span style="overflow: initial;" class="smallScreenSpanText">Mod Page</span></button></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+
+		<div id="errorMessage" class="alert " role="alert">
+			<ul id="pageErrorList" style=" list-style-type: none;">
+				<li data-template>
+					<p id="Colormsg">{{msg}}</p>
+				</li>
+			</ul>
+		</div>
+
+		<div id="successMessage" class="alert " role="alert">
+			<ul id="pageSuccessList" style=" list-style-type: none;">
+				<li data-template>
+					<p id="Colormsg">{{msg}}</p>
+				</li>
+			</ul>
+		</div>
+
+
+		<div id="Page">
+			<div class="row">
+
+				<div id="toplogHead" class="lcars-elbow bottom right lcars-CCLlightorange-bg col-lg-12">
+					<div id="flagParentDiv" class="row">
+						<button type="button" id="flagParent" onclick="flagParent(getURLLogID())" class="col-1 lcars-button radius"><img id="flagParentImg" src="\FlagContentShirt.png" class="col-1"> Report</button>
+					</div>
+					<!--Captain's Name-->
+					<div id="captainsNameDiv" class="row">
+						<h5 id="captainsNameLabel" class="col-1 logHead">Captain: </h5>
+						<h5 id="captainsNameText" class="col-1 logHead"></h5>
+					</div>
+
+					<!--Ship's Name-->
+					<div id="shipsNameDiv" class="row">
+						<h5 id="shipsNameLabel" class="col-1 logHead">Ship: </h5>
+						<h5 id="shipsNameText" class="col-1 logHead"></h5>
+
+					</div>
+					<br>
+					<br>
+					<br>
+					<span class="advFont" style="margin-bottom: 5px; position: relative; right: 10px;">Posted by: </span>
+					<span id="usernameText" class="col-1 logHead" style="margin-bottom: 5px; position: relative; right: 10px;"></span>
+					<div id="logDiv" class="row">
+						<!--Log Name-->
+
+						<h2 id="LogNameText" class="col-12 logHead"></h2>
+
+
+
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="row" id="background-LogContainer">
+
+				<p id="LogText" class="col-sm-8 col-xs-9"></p>
+				<div class="col-sm-3 col-xs-12">
+
+					<div class="row">
+						<label id="charLabel" class="col-sm-4">Character Limit: </label>
+						<label id="charText" class="col-sm-6"></label>
+					</div>
+
+					<div style="margin-left: 2px;" class="row">
+						<label id="dislikesTitle" class="col-4">Dislikes: </label><label class="col-4" id="dislikes"></label>
+					</div>
+
+					<div style="margin-left: 2px;" class="row">
+						<label id="likesTitle" class="col-4">Likes: </label><label class="col-6" id="likes"></label>
+					</div>
+
+					<div style="margin-left: 2px;overflow: initial;" class="row">
+						<label id="ratingTitle" class="col-3">Rating: </label>
+						<label class="col-3" id="ratingsLabel"></label>
+					</div>
+					<div class="row" id="ratingButtons">
+						<button type="button" class="lcars-button radius col-md-6 col-sm-4 col-xs-2" id="logLikeButton"><img src="vulcanLike.png" id="likeButtonImg"><p style="color: black; overflow: hidden;">Like<p></button>
+						<button type="button" class="lcars-button radius col-md-6 col-sm-4 col-xs-2" id="logDislikeButton"><img src="vulcanDislike.png" id="dislikeButtonImg"><p style="color: black; overflow: hidden;">Dislike</p></button>
+					</div>
+				</div>
+			</div>
+			<div id="newOfficialLogs" class="LogArea row">
+
+				<ul id="officialLogList" style=" list-style-type: none; word-wrap: break-word;" class="col-lg-12">
+
+					<li data-template class="row">
+						<div class=" lcars-elbow top right lcars-CCLdarkblue-bg row" id="logInstanceCard">
+							<div class="card-block col-12" style="display: table;">
+								<p class="card-text row CardSpace advFont" style="overflow: initial;"><small class="text-muted">Posted by: {{User}}</small></p>
+
+								<p class="card-text row CardSpace" style="word-wrap: break-word; width: 95%; overflow: initial;">{{Content}}</p>
+
+								<div id="flagLogDiv" class="row" style="float: left; height: 30px;">
+									<button type="button" style="height: 30px; width: 130px;" class="lcars-button radius lcars-CCLmeddarkorange-bg col-8 CardSpace"
+									 id="flagLog" onclick="flagLog('{{_id}}')"><img style="height: 30px; position: relative; bottom: 10px;" id="flagLogImg" src="\FlagContentShirt.png" class="col-4"> Report</button>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+
+
+			</div>
+			<div id="logHead" class="lcars-elbow top right lcars-CCLlightorange-bg row">
+				<div id="officiallogPagesDiv">
+
+					<nav aria-label="Page navigation example" id="officialLogPages">
+						<ul class="pagination" id="pageList">
+							<li class="page-item">
+								<a class="page-link lcars-button radius lcars-CCLlightorange-bg" id="logPageNumber{{page}}" onclick="{{method}}({{page}})"
+								 data-template>{{page}}</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+			<div id="logHeadSubArea" class="lcars-elbow bottom right lcars-CCLmeddarkorange-bg row">
+
+				<div id="timerDiv">
+
+					<h4 id="timerLbl" style="color: black"></h4>
+					<h4 id="timer" style="color: black"></h4>
+
+				</div>
+			</div>
+
+
+
+			<div id="allSubmissionsDiv">
+
+				<div id="votingErrorMessage" class="alert" role="alert">
+
+					<ul id="votingErrorList" style=" list-style-type: none;">
+						<li data-template>
+							<p id="Colormsg">{{msg}}</p>
+						</li>
+					</ul>
+
+				</div>
+				<div id="subBorder">
+					<ul id="submissionLogList" class="LogArea">
+						<li data-template class="row">
+							<div class="lcars-elbow top right SubmissionCard col-12" id="subLogInstanceCard{{_id}}" style="margin-left: 10px;
+								 width:98%; float: left; display: inline-block; word-wrap: break-word; background-color: #04005f;
+								 display: table;" onclick="voteForSubmission('{{_id}}')">
+								<div class="card-block ">
+									<p class="card-title ">
+										<small style="padding-left: 10px; color: white;">
+										Posted by: {{User}}
+									</small>
+									</p>
+
+									<p class="card-text " style=" color: white; display: table; padding-left: 10px; word-break: break-all; word-wrap: break-word;">
+										{{Content}}
+									</p>
+								</div>
+
+							</div>
+
+							<div id="flagSubmissionDiv">
+								<button type="button" class="lcars-button" id="flagSubmission" onclick="flagSubmission('{{_id}}')"><img id="flagSubmissionImg" src="\FlagContentShirt.png"> Report</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+
+			<div id="submissionsPostDiv" class="row">
+				<div id="submissionErrorMessage" class="alert " role="alert">
+
+					<ul id="submissionErrorList" style=" list-style-type: none; word-wrap: break-word;">
+						<li data-template>
+							<p id="Colormsg">{{msg}}</p>
+						</li>
+					</ul>
+
+				</div>
+				<h3 class="col-lg-12" id="postSubHeadText">Post Submission</h3>
+
+				<textarea class="col-9" id="subPostText" type="input" rows="10" cols="10"></textarea>
+
+
+
+				<button type="button" id="postSubButton" class="btn btn-primary">Post</button>
+
+			</div>
+
+
+
+			<div id="BottomElbow" class="lcars-elbow top right lcars-CCLmeddarkorange-bg col-12">
+				<div id="subPagesDiv">
+
+					<nav aria-label="Page navigation example" id="homeLogPages">
+						<ul class="pagination" id="pageList">
+
+							<li class="page-item">
+								<a class="page-link lcars-button radius" id="subLogPageNumber{{page}}" onclick="{{method}}({{page}})" data-template>{{page}}</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+	 crossorigin="anonymous"></script>
+
+</body>
+
+</html>

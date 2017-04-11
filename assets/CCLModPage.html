@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title></title>
+
+	<script src="./tempo-2.0/tempo.js" type="text/javascript"></script>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	 crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+	 crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="CCL.css">
+	<link rel="stylesheet" type="text/css" href="CCLModPageStyle.css">
+	<link rel="stylesheet" href="css/lcars.css">
+
+	<script src="CCL.js"></script>
+	<script src="CCLModPageScript.js"></script>
+</head>
+
+<body>
+
+
+
+
+
+
+	<div class="container">
+
+
+
+		<div class="row" style="overflow:initial;">
+			<a type="button" href="http://localhost:8080/CCL.html"><img class="col-12" id="largeHeaderTop" src="largeHeaderTop.png"><img class="col-12" id="smallHeaderTop" src="smallHeaderTop.png"></a>
+		</div>
+		<div class="row" style="height:23.4px; overflow:initial;">
+			<img class="col-xs-2" id="largeHeaderBottom" src="largeHeaderBottom.png" style="height:23.4px; width:104px;  padding-left:0px;">
+
+
+			<div style="max-height: 20px; ">
+				<div class="lcars-CCLmedskyblue-bg " id="topDecBar">
+
+				</div>
+			</div>
+		</div>
+
+
+		<div id="errorMessage" class="alert " role="alert">
+			<ul id="pageErrorList" style=" list-style-type: none;">
+				<li data-template>
+					<p id="Colormsg">{{msg}}</p>
+				</li>
+			</ul>
+		</div>
+
+		<div id="successMessage" class="alert " role="alert">
+			<ul id="pageSuccessList" style=" list-style-type: none;">
+				<li data-template>
+					<p id="Colormsg">{{msg}}</p>
+				</li>
+			</ul>
+		</div>
+
+
+
+
+
+		<div class="row" style="margin-left:0px;">
+
+			<div class="row" style="padding-top: 5px;">
+				<div class=" column-xs-1-12 column-s-1-7 column-lg-1-6 lcars-elbow bottom left lcars-CCLlightorange-bg" style="max-width: 91px; ">
+
+					<ul class="lcars-menu left" style="max-width: 71px" id="SideNavBar">
+
+						<li class="lcars-CCLlightorange-bg tall large-gap">
+
+						</li>
+
+						<li class="lcars-CCLdarkskyblue-bg ">
+
+						</li>
+
+						<li class="lcars-CCLmedlightskyblue-bg ">
+
+						</li>
+
+						<li class="lcars-CCLlightskyblue-bg ">
+
+						</li>
+
+
+						<li class="lcars-CCLlightskyblue-bg ">
+
+						</li>
+
+
+						<li class="lcars-CCLmedlightskyblue-bg ">
+
+						</li>
+
+						<li class="lcars-button right lcars-CCLmeddarkorange-bg" style="font-size: 10px;" id="submissionFlagsButton">
+							Submission Logs
+						</li>
+
+						<li class="lcars-CCLmedskyblue-bg ">
+
+						</li>
+
+						<li class="lcars-button right lcars-CCLmeddarkorange-bg" style="font-size:  10px" id="parentFlagsButton">
+							Captain's Logs
+						</li>
+
+						<li class="lcars-CCLmedlightskyblue-bg ">
+
+						</li>
+
+						<li class="lcars-button right lcars-CCLmeddarkorange-bg" style="font-size:  10px;" id="captainsFlagsButton">
+							Logs
+						</li>
+
+						<li class="lcars-CCLmedskyblue-bg " style="min-height: 40px">
+
+						</li>
+
+						<li class="lcars-CCLdarkskyblue-bg tall ">
+
+						</li>
+						<li class="lcars-CCLmedskyblue-bg ">
+
+						</li>
+
+						<li class="lcars-CCLlightskyblue-bg ">
+
+						</li>
+
+					</ul>
+					<div class="lcars-elbow top left lcars-CCLlightorange-bg" style="max-width: 91px"></div>
+
+				</div>
+
+				<div style="max-height: 20px; ">
+					<div class="lcars-CCLmedskyblue-bg " id="MidDecBar">
+
+					</div>
+				</div>
+			</div>
+
+			<p id="accessdeniedMsg" style="display: none; margin-left: 80px; width: 30vw;">You must be logged in as a moderater to view this content. Access Denied.</p>
+
+			<div id="bodyDiv">
+
+				<div id="collectionContentContainerDiv" data-spy="scroll" data-target="#logCardCollectionDiv">
+
+					<div id="flaggedContentDiv" style=" overflow-x: hidden;">
+						<ul id="flagCardDiv" class="nav nav-tabs" role="tablist" style=" list-style-type: none;  overflow-x: hidden;">
+							<li data-template>
+								<div class="lcars-elbow top left lcars-CCLdarkblue-bg" id="logInstanceCard" style="word-wrap: break-word; min-height: 200px; display: table">
+									<div class="card-block" style=" display: table;">
+
+										<h4 class="card-title">{{Name}}</h4>
+
+										<p class="card-text advFont" style=" display: table;"><small class="text-muted" style=" display: table;">Posted by: {{User.username}}</small></p>
+
+										<p class="card-text" style=" display: table;"><small class="text-muted" style=" display: table;">Demerits: {{User.BehaviorRating}}</small></p>
+
+										<div style="margin-top: 5px; display: table;">
+											<!-- OkContent  -->
+											<button id="unflagButton" type="button" class="lcars-button left" onclick="unFlag('{{method}}','{{id}}')">Unflag</button>
+
+											<!-- MuteUser  -->
+											<button id="MuteUserButton" type="button" class="lcars-button right" onclick="muteUser('{{User._id}}','{{method}}','{{id}}')">Mute User</button>
+
+											<!-- BadContent  -->
+											<button id="replaceContentButton" type="button" class="lcars-button radius" onclick="replaceContent('{{method}}','{{id}}','{{User._id}}')">Replace Content</button>
+											<input style="float: left; width: 140px; margin-right: 2px; height: 35px; margin-top: 3px; margin-left: 11px; color: black;"
+											 id="replaceInput{{id}}" class="ModCard">
+
+										</div>
+										<p class="card-text" style=" display: table; padding-right: 10px;">{{Content}}</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>

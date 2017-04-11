@@ -1,0 +1,198 @@
+
+.container
+{
+    width: 1020px;
+    margin: 0px auto;
+    overflow: initial;
+    margin-top: -26px;
+}
+
+.bodyPosAdj
+{
+    position: relative;
+    top:5px;
+    right:13px;
+}        
+
+#newLogBodyForm
+{
+    height: 100%;
+    width: 100%;
+}
+
+#initialLogPost
+{
+    width:100%;
+}
+
+#inputInitialLog
+{
+    width:85%;
+    float: left;
+    color: black;
+}
+
+#logNames
+{
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#logTimes
+{
+    height: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#logNameDiv
+{
+    width: 100%;
+    height: 30px;
+}
+
+#CaptainsNameDiv
+{
+    width:50%;
+    float:left;
+}
+
+#ShipsNameDiv
+{
+    width: 50%;
+    float: right;
+}
+
+#inputCaptainsName
+{
+    width:70%;
+    color: black;
+}
+
+#inputShipsName
+{
+    width:70%;
+    color: black;
+}
+
+#submissionTimeDiv
+{
+    float: right;
+    position: relative;
+    left: 15px;
+    bottom:73px;
+    margin-left: 100px;
+}
+
+#voteTimeDiv
+{
+    float: right;
+    position: relative;
+    top:35px;
+    left: 15px;
+    margin-left: 100px;
+}
+
+#maxCharDiv
+{
+    float: right;
+    position: relative;
+    left: 15px;
+    top:142px;
+    z-index: 5;
+    margin-left: 100px;
+}
+
+#charMaxDrop
+{
+    float: right;
+}
+
+#labelLogName
+{
+    float:left;
+}
+
+#inputLogName
+{
+    width:85%;
+    height:100%;
+    float:left;
+    color: black;
+}
+
+#bodyDiv
+{
+    margin-top: 10px; 
+    width: 100%;
+    display: inline-block;
+    background-color: #F0A30A;    
+}
+
+#NewLogLabel
+{
+    margin-top: 5px;
+    float: left;
+}
+
+#LcarsMenu
+{
+    overflow-x: hidden;
+    margin-top: -20px;
+}
+
+#voteTimedropdownMenuButton
+{
+    font-size: 12px;
+    width: 90px;
+}
+
+#subTimedropdownMenuButton
+{
+    font-size: 12px;
+    width: 90px;
+}
+
+#maxChardropdownMenuButton
+{
+    font-size: 12px;
+    width: 90px;
+}
+
+
+
+
+
+div.FAQ::-webkit-scrollbar
+{
+    background-color: black;
+}
+
+div.FAQ::-webkit-scrollbar-thumb
+{
+    background-color: #ffc200;
+    border-radius: 0px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+    div.FAQ::-webkit-scrollbar-track-piece
+{
+    background-color: black;
+}
+
+    div.FAQ::-webkit-scrollbar-track
+{
+    background-color: black;
+}
+
+    div.FAQ::-webkit-scrollbar-button
+{
+    background-color: black;
+}
+
+    div.FAQ::-webkit-scrollbar-corner
+{
+    background-color: black;
+}

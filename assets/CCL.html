@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Star Trek inspired fan-fiction - Community Captain's Log</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A Star Trek inspired fan-fiction website designed to bring everyones ideas to the story. On each Captain's Log the users will vote for what happens next.">
+
+    <link rel="shortcut icon" href="CCLlogo.ico" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+        crossorigin="anonymous">
+
+    <script src="./tempo-2.0/tempo.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="CCL.css">
+    <link rel="stylesheet" type="text/css" href="CCLHomePageStyle.css">
+    <link rel="stylesheet" href="css/lcars.css">
+
+    <script src="CCL.js"></script>
+    <script src="CCLHomePageScript.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <a type="button" href="http://localhost:8080/CCL.html"><img class="col-12" alt="Community Captain's Log" id="largeHeaderTop" src="largeHeaderTop.png"><img class="col-12"
+                    alt="Community Captain's Log" id="smallHeaderTop" src="smallHeaderTop.png"></a>
+        </div>
+        <div class="row" style="height:23.4px;">
+            <img class="col-xs-2" id="largeHeaderBottom" src="largeHeaderBottom.png" style="height:23.4px; width:104px;  padding-left:0px;">
+
+            <!--Login-->
+            <label class="col-1 largeBottomHeaderHeight lcars-CCLdarkskyblue-bg loginElementLarge largeScreenInfo" id="usernameLabel"><span id="usernameLblSpan"> Username </span></label>
+            <input class="col-1 largeBottomHeaderHeight lcars-CCLmedorange-bg loginElementLarge largeScreenInfo " id="usernameInput"
+                type="" name="" placeholder="Username">
+
+            <label class="col-1 largeBottomHeaderHeight lcars-CCLdarkskyblue-bg loginElementLarge largeScreenInfo" id="passwordLabel"><span id="passwordLblSpan"> Password </span></label>
+            <input class="col-1 largeBottomHeaderHeight lcars-CCLmedorange-bg loginElementLarge largeScreenInfo " id="passwordInput"
+                type="password" name="" placeholder="Password">
+
+            <button type="button" class="col-1 lcars-button lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+                id="loginButton"><span id="loginLblSpan">Login</span></button>
+
+            <button type="button" class="col-1 lcars-button lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+                id="signupButton"><span id="signupLblSpan">Sign Up</span></button>
+
+            <button type="button" class="col-2 lcars-button right lcars-CCLmeddarkorange-bg largeBottomHeaderHeight loginElementLarge largeScreenInfo"
+                id="forgotPassLink"><span id="forgotpasswordLblSpan">Forgot Password</span></button>
+
+            <!--Logout-->
+            <span class="col-2 logoutElementLarge largeBottomHeaderHeight largeScreenInfo" id="usernameDisplayLabel"></span>
+
+            <button id="logoutButton" type="button" class="col-2 logoutElementLarge  largeBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg largeScreenInfo"><span id="LogOutText"> Log Out</span></button>
+
+            <button id="ModPageButton" type="button" class="col-2 largeBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg largeScreenInfo"
+                style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;"><span id="LogOutText">Mod Page</span></button>
+
+            <div class="btn-group col-xs-7 largeBottomHeaderHeight smallScreenDropDown" style="padding-top: 2px;">
+                <ul id="multicol-menu" class="nav">
+                    <li class="dropdown largeBottomHeaderHeight">
+                        <a href="#" class="btn lcars-CCLmeddarkorange-bg largeBottomHeaderHeight dropdown-toggle" data-toggle="dropdown" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px; width:100%;  overflow: hidden;">
+                            <p id="smallDropDownLblSpan">User <img src="caret.png" style="height:3px; position:relative; bottom:2px;"></p>
+                        </a>
+                        <ul class="lcars-CCLdarkblue-bg smallScreenDropDownBorder dropdown-menu" id="icons">
+
+                            <li class="pickList"><label class="col-1 smallBottomHeaderHeight loginElementSmall smallScreenDropDown" id="smallusernameLabel"><span class="">Username</span></label></li>
+                            <li class="pickList"><input class="col-2 smallBottomHeaderHeight lcars-CCLmedorange-bg loginElementSmall smallScreenDropDown"
+                                    id="smallusernameInput" type="" name="" placeholder="Username"></li>
+                            <li class="pickList"><label class="col-1 smallBottomHeaderHeight loginElementSmall smallScreenDropDown" id="smallpasswordLabel"><span class="">Password</span></label></li>
+                            <li class="pickList"><input class="col-2 smallBottomHeaderHeight lcars-CCLmedorange-bg loginElementSmall smallScreenDropDown"
+                                    id="smallpasswordInput" type="password" name="" placeholder="Password"></li>
+                            <li class="pickList"><button type="button" class="btn col-1 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+                                    id="smallloginButton"><span class="smallScreenSpanText">Log In</span></button></li>
+                            <li class="pickList"><button type="button" class="btn col-1 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+                                    id="smallsignupButton"><span class="smallScreenSpanText">Sign Up</span></button></li>
+                            <li class="pickList"><button class="btn col-2 lcars-button lcars-CCLmeddarkorange-bg smallBottomHeaderHeight loginElementSmall smallScreenDropDown"
+                                    id="smallforgotPassLink"><span class="smallScreenSpanText">Forgot Password</span></button></li>
+
+                            <li class="pickList"><span class="col-2 logoutElementSmall smallBottomHeaderHeight" id="smallusernameDisplayLabel"></span></li>
+                            <li class="pickList"><button id="smalllogoutButton" type="button" class="btn col-2 logoutElementSmall  smallBottomHeaderHeight lcars-button lcars-CCLmeddarkorange-bg"><span class="smallScreenSpanText">Log Out</span></button></li>
+                            <li class="pickList"><button id="smallModPageButton" type="button" class="btn col-2 smallBottomHeaderHeight lcars-button right lcars-CCLmeddarkorange-bg"><span class="smallScreenSpanText">Mod Page</span></button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="alert" role="alert">
+            <ul id="pageErrorList" style=" list-style-type: none;">
+                <li data-template>
+                    <p id="Colormsg">{{msg}}</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="successMessage" class="alert" role="alert">
+            <ul id="pageSuccessList" style=" list-style-type: none;">
+                <li data-template>
+                    <p id="Colormsg">{{msg}}</p>
+                </li>
+            </ul>
+        </div>
+
+        <label id="noMatchLabel">No Match</label>
+
+        <div class="row" style="padding-top: 5px;">
+            <div class="column-s-1-7 lcars-elbow bottom left lcars-CCLlightorange-bg" style="max-width: 91px; ">
+
+                <ul class="lcars-menu left" style="max-width: 71px" id="SideNavBar">
+
+
+                    <li class="lcars-CCLlightorange-bg tall large-gap"></li>
+
+                    <li class="lcars-CCLdarkskyblue-bg "></li>
+
+                    <li class="lcars-CCLmedlightskyblue-bg "></li>
+
+                    <li class="lcars-button lcars-CCLmeddarkorange-bg right" style="font-size: 15px; float: none; width: 100%;" id="FAQButton">FAQ</li>
+
+                    <li class="lcars-CCLmedskyblue-bg " style="min-height: 40px"></li>
+
+                    <li class="lcars-CCLdarkskyblue-bg tall "></li>
+
+                    <li class="lcars-button right lcars-CCLmeddarkorange-bg" style="font-size: 13px" id="popularLogsButton">Popular</li>
+
+                    <li class="lcars-CCLlightskyblue-bg "></li>
+
+                    <li class="lcars-button right lcars-CCLmeddarkorange-bg" style="font-size: 13px" id="myLogsButton">My Logs</li>
+
+                    <li class="lcars-CCLmedlightskyblue-bg "></li>
+
+                    <li class="lcars-button right lcars-CCLmeddarkorange-bg" style="font-size: 13px" id="updatedLogsButton">Updated</li>
+
+                    <li class="lcars-CCLmedskyblue-bg "></li>
+
+                    <li class="lcars-button right lcars-CCLmeddarkorange-bg" style="font-size: 13px" id="oldLogsButton">Oldest</li>
+
+                    <li class="lcars-CCLmedlightskyblue-bg "></li>
+
+                    <li class="lcars-button right lcars-CCLmeddarkorange-bg" style="font-size: 13px;" id="recentLogsButton">Recent</li>
+
+                    <li class="lcars-CCLmedskyblue-bg "></li>
+
+                    <li class="lcars-CCLlightskyblue-bg "></li>
+
+                </ul>
+
+                <div class="lcars-elbow top left lcars-CCLlightorange-bg smallScreenBottomBar" id="bottomLeftBottomBar"></div>
+
+            </div>
+            <div class="column-s-3-7" style="float: left;">
+                <div id="searchDropDown" class="dropdown " style="max-height: 20px;">
+                    <button class="lcars-button lcars-CCLmeddarkorange-bg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="max-height: 20px; padding-top: 3px; margin-left: 2px;">Search by:</button>
+                    <div class="dropdown-menu lcars-CCLdarkblue-bg  searchMenuStyle" aria-labelledby="dropdownMenuButton">
+                        <a id="userSearchCategory" class="dropdown-item" href="#">User</a>
+                        <a id="titleSearchCategory" class="dropdown-item" href="#">Log Title</a>
+                    </div>
+                </div>
+
+                <input id="searchInput" class="lcars-CCLmedorange-bg advFont" style="max-height: 20px; padding-top: 3px; color:black; float: left;">
+
+                <div class="lcars-button lcars-CCLmeddarkorange-bg " id="searchButton" style="max-height: 20px; padding-top: 3px; margin-right:  2px; float: left;">Search</div>
+
+                <button type="button" class="lcars-button right lcars-CCLmeddarkorange-bg" id="newCaptainsLogButton" style="max-height: 20px; padding-top: 3px; margin-right:  2px; float: left">New Log</button>
+
+            </div>
+
+            <div id="MOTDArea" class="lcars-CCLmeddarkorange-bg">
+                <ul id="MOTDList">
+                    <li style="height:  45px;" data-template class="lcars-CCLmeddarkorange-bg">
+                        <p id="MOTDParagraph" class="lcars-CCLmeddarkorange-bg">{{Content}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bodyDiv">
+
+            <div id="collectionContentContainerDiv" data-spy="scroll" data-target="#logCardCollectionDiv">
+
+                <div id="contentCollectionDiv" style="min-width: 100%">
+
+
+
+                    <div id="logCardCollectionDiv" style="min-width: 100%" class="LogArea">
+
+                        <ul id="logCardDiv" class="nav nav-tabs LogArea" role="tablist" style=" list-style-type: none; word-wrap: break-word;">
+                            <li data-template>
+                                <div class=" lcars-elbow top right lcars-CCLdarkblue-bg" id="logInstanceCard" style=" display: table;">
+                                    <div class="card-block" id="CardContentContainer" style=" display: table;">
+                                        <h4 class="card-title" style="font-family: CCLFont; display: table;">{{Name}}</h4>
+                                        <p class="card-text advFont"><small class="text-muted" style=" display: table;">Posted by: {{User}}</small></p>
+
+                                        <p class="card-text" style=" display: table;"><small class="text-muted" style=" display: table;">Rating: {{Rating}}</small></p>
+                                        <p class="card-text" id="CardContent" style=" display: table;">{{Content}}</p>
+
+                                        <a id="cardLogButton" style="float: left; margin-left: 5px;" type="button" class="lcars-button right lcars-CCLmeddarkorange-bg"
+                                            href="http://localhost:8080/CCLInitLogPage.html?logId={{_id}}">Continue reading...</a>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="BottomBar" class="col-12 lcars-CCLlightorange-bg smallScreenBottomBar">
+
+                        <div class="center" id="contentPageIteraterDiv">
+
+                            <label id="pageNumber" style="display:none;"></label>
+
+                            <nav id="homeLogPages">
+                                <ul class="pagination" id="pageList">
+
+                                    <li class="page-item">
+                                        <a class="page-link lcars-button radius lcars-CCLlightorange-bg" id="logPageNumber{{page}}" onclick="{{method}}({{page}})"
+                                            data-template>{{page}}</a>
+
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

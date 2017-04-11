@@ -1,0 +1,390 @@
+
+#noMatchLabel
+{
+    margin-left: 35%;
+}
+
+#collectionContentContainerDiv
+{ 
+    height:800px;
+    margin-top: 10px;
+    position: relative;
+    bottom: 41px;
+    z-index: 1;
+    max-width: 80%;
+    margin-left: 7%;
+}
+
+#logInstanceCard
+{
+    min-height: 150px; 
+    max-width: 100%;
+    min-width: 100%; 
+    display: table;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 20px;
+}
+
+#SideNavBar
+{
+    z-index: 2;
+}
+
+#contentTabBarDiv
+{
+    width: 100%;
+    height: 10%;
+}
+
+#contentCollectionDiv
+{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    float: right;
+}
+
+.center
+{
+    display: inline-block;
+    margin: auto;
+} 
+
+.searchMenuStyle
+{
+    border-left: 5px groove #054a7f;
+    border-right: 5px groove #054a7f;
+    border-bottom: 5px groove #054a7f;
+    border-radius: 5px;            
+}
+
+#contentPageIteraterDiv
+{
+    
+}
+
+#userSearchCategory
+{
+    max-height: 20px; color:white;
+}
+
+#titleSearchCategory
+{
+    max-height: 20px; color:white;
+}
+#userSearchCategory:hover
+{
+    max-height: 20px; color:black;
+}
+
+#titleSearchCategory:hover
+{
+    max-height: 20px; color:black;
+}
+
+
+#MOTDArea
+{
+    margin-top: 30px;
+    margin-left: 90px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 5px solid #ff9609;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 78%;
+    height: 50px;
+    max-height: 50px;
+    z-index: 400000;
+    color:black;
+}
+
+#MOTDParagraph
+{
+    overflow-x: scroll;
+    height: 100%;
+    margin-bottom: 10px;
+    z-index: 400000;
+}
+
+#logCardCollectionDiv
+{
+    margin-top: 35px;
+    height: 85%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-top: 10px groove #ffc200;
+    border-right: 10px groove #ffc200;
+    border-bottom: 10px groove #ffc200;
+    border-radius: 20px;
+}
+
+#ratingCardLog
+{
+    float: left;
+}        
+
+#searchDropDown
+{
+    float:left;
+    margin-right: 2px;
+}
+
+#searchInput
+{
+    float:left;
+    width:120px;
+    height: 37px;
+}
+
+#searchButton
+{
+    float:left;
+    margin-left: 2px;
+}
+
+
+#noMatchLabel
+{
+    display: none;
+}
+
+#CardContent
+{
+    display: table;
+    max-height: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+#CardContentContainer
+{
+    display: table;
+    max-height: 100%;
+}
+
+#smallsearchInput
+{
+    display: none;
+}
+
+div.LogArea::-webkit-scrollbar
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar-thumb
+{
+    background-color: #ffc200;
+    border-radius: 0px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+div.LogArea::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar-button
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar-corner
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar-thumb
+{
+    background-color: #ffc200;
+    border-radius: 0px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+div.LogArea::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar-button
+{
+    background-color: transparent;
+}
+
+div.LogArea::-webkit-scrollbar-corner
+{
+    background-color: transparent;
+}           
+
+@media only screen and (max-width:770px) 
+{
+    #collectionContentContainerDiv
+    {
+        width: 100%;
+        margin-left: 2%;
+        position: relative;
+        right: 10px;
+    }
+    #logInstanceCard
+    {
+        width: 100%;
+        
+    }
+
+}
+
+@media only screen and (max-width:571px)
+{
+    
+    #collectionContentContainerDiv
+    {
+        width: 90%;
+        margin-left: 10%;
+    }
+    #MOTDArea
+    {
+        width: 84%;
+    }
+    #logInstanceCard
+    {
+        width: 100%;
+        position: relative;
+        left: 20px;
+    }
+    #dropdownMenuButton
+    {
+        font-size: 9px;
+        width: 20vw;
+    }
+
+    #searchInput
+    {
+        float:left;
+        width:40px;
+        height: 37px;
+        font-size: 10px;
+    }
+
+    #searchButton
+    {
+        float:left;
+        margin-left: 2px;
+        font-size: 10px;
+    }
+
+    #newCaptainsLogButton
+    {
+        font-size: 9px;
+        width: 13vw;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 992px)
+{
+    #collectionContentContainerDiv
+    {
+        min-width: 70%;
+        max-width: 70%;
+        margin-left: 8.632%;
+    }
+
+    #MOTDArea
+    {
+        min-width: 67%;
+        max-width: 67%;
+    }
+
+    #logInstanceCard
+    {
+        max-width: 80%; 
+    }
+}
+
+@media only screen and (max-width: 770px)
+{
+
+    #BottomBar
+    {
+        width: 100%; 
+        height: 145px;
+        margin-top: 62px;
+        border: 1px solid #ffc200;
+        border-bottom-right-radius: 90px;                
+    }
+
+    #bottomLeftBottomBar
+    {
+        max-width: 91px; 
+        height: 205px;
+    }
+
+    #collectionContentContainerDiv
+    {
+        min-width: 60%;
+        max-width: 65%;
+        margin-left: 70px;
+    }
+    #MOTDArea
+    {
+        min-width: 59%;
+        max-width: 59%;
+    }
+}
+
+@media only screen and (min-width:771px)
+{
+    
+    #BottomBar
+    {
+        width: 100%; 
+        height: 60px;
+        margin-top: 62px;
+        border: 1px solid #ffc200;
+        border-bottom-right-radius: 90px;
+    }
+    
+    #bottomLeftBottomBar
+    {
+        max-width: 91px; 
+        height: 120px;
+    }
+
+}   
+
+@media only screen and (max-width:400px)
+{
+    #cardLogButton
+    {
+        font-size: 9px;
+    }
+}
+
+

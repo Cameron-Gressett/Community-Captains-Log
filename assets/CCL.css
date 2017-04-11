@@ -1,0 +1,484 @@
+body
+{
+    background-color: black;
+    margin: 0px;
+}        
+
+.loginElementSmall{}
+.logoutElementSmall{}
+.loginElementLarge{}
+.logoutElementLarge{}  
+
+#largeHeaderTop
+{
+    max-height: 112.08px;
+}
+
+#largeHeaderBottom
+{
+    max-height: 23.4px;
+    position: relative;
+    bottom: 2px;
+}
+
+#usernameLabel
+{
+    height: 21.4px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position:relative;
+    bottom:10px;            
+}
+
+#passwordLabel
+{
+    height: 21.4px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position:relative;
+    bottom:10px;   
+}
+
+#loginButton
+{
+    float:none;
+}
+
+#logoutButton
+{      
+    float:none;   
+}
+
+#usernameDisplayLabel
+{       
+    float: none; 
+    color:white;
+}
+
+#forgotPassLink
+{
+    float:none;
+}
+
+#ModPageButton
+{
+    display: none;
+    float:none;
+}
+
+#smalllogoutButton
+{
+    width: 100%;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-bottom: 5px;
+}
+
+#smallModPageButton
+{
+    width: 100%;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+#smallusernameDisplayLabel
+{
+    color: white;
+}
+
+#usernameInput
+{
+    max-width: 111px;
+}
+#passwordInput
+{
+    max-width: 111px;
+}
+
+::-webkit-scrollbar
+{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #ffc200;
+    border-radius: 0px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-button
+{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-corner
+{
+    background-color: transparent;
+}
+
+@media only screen and (min-width:991px) 
+{
+    #homeLogPages
+    {
+    width: 100%;
+    margin-left: 55%;
+    }
+
+    #pageLongTitle
+    {
+        float:left;
+        position: relative;
+        top:18px;
+        right:7px;
+        display: block;
+        z-index: 5;
+    }
+
+    #pageShortTitle
+    {
+        display:none;
+    }    
+    #LogOutText
+    {
+        position: relative;
+        bottom: 5px;
+    }
+}
+
+@media only screen and (max-width:991px) 
+{
+    #pageLongTitle
+    {
+        display:none;
+    }
+
+    #pageShortTitle
+    {
+        float:left;
+        position: relative;
+        top:18px;
+        right:7px;
+        display: block;
+        z-index: 5;
+    }
+
+    #largeHeaderTop
+    {
+        display:none;
+    }
+
+    #smallHeaderTop
+    {
+        max-height: 112.08px;
+    }
+
+    .largeBottomHeaderHeight
+    {
+        height: 20.4px;
+    }
+
+    #usernameLabel
+    {
+        font-size: 10px;
+        position: relative;
+        bottom: 3px;
+        padding-top: 2px;
+    }
+    #usernameInput
+    {
+        color: black;
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    #passwordLabel
+    {
+        font-size: 10px;
+        position: relative;
+        bottom: 3px;
+        padding-top: 2px;
+    }
+    #passwordInput
+    {
+        font-family: CCLADVFont;
+        color: black;
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    #loginButton
+    {
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    #signupButton
+    {
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    #forgotPassLink
+    {
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    #usernameDisplayLabel
+    {
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    #logoutButton
+    {
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    #ModPageButton
+    {
+        font-size: 10px;
+        padding-top: 2px;
+    }              
+
+    #usernameLblSpan
+    {
+        position: relative;
+        top:3px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    #passwordLblSpan
+    {
+        position: relative;
+        top:3px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    #loginLblSpan
+    {
+        position: relative;
+        top:4px;
+    }
+
+    #signupLblSpan
+    {
+        position: relative;
+        top:4px;
+    }
+
+    #forgotpasswordLblSpan
+    {
+        position: relative;
+        top:4px;
+    }        
+}
+
+@media only screen and (min-width:992px) 
+{            
+    #largeHeaderTop
+    {
+        max-height: 112.08px;
+    }
+    
+    #smallHeaderTop
+    {
+        display:none;
+    }            
+
+    #usernameLabel
+    {
+        position: relative;
+        bottom: 0px;
+        padding-top: 2px;
+    }
+    #passwordLabel
+    {
+        position: relative;
+        bottom:0px;
+        padding-top: 2px;
+    }                     
+
+    #usernameLblSpan
+    {
+        position: relative;
+        top:1px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    #passwordLblSpan
+    {
+        position: relative;
+        top:1px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    #loginLblSpan
+    {
+        position: relative;
+        bottom:4px;
+    }
+
+    #signupLblSpan
+    {
+        position: relative;
+        bottom:4px;
+    }
+
+    #forgotpasswordLblSpan
+    {
+        position: relative;
+        bottom:4px;
+    }
+}             
+
+@media only screen and (min-width: 771px)  
+{
+    .smallScreenDropDown
+    {
+        display: none;
+    }   
+
+    .largeBottomHeaderHeight
+    {
+        max-height: 23.4px;
+    }
+} 
+
+@media only screen and (max-width: 770px)  
+{
+    .smallBottomHeaderHeight
+    {
+        max-height: 23.4px;
+        position: relative;
+        bottom:7px;
+    }
+    
+    .smallScreenDropDown
+    {
+        padding-left: 0px;
+    }   
+
+    #smallDropDownLblSpan
+    {
+        position: relative;
+        bottom:6px;
+    }
+    
+    #smallforgotPassLink
+    {       
+        width:100%;     
+        margin-bottom: 3px;
+    }
+
+    #smallusernameLabel
+    {           
+        width:100%;      
+        margin-bottom: 3px;
+        color: white;
+    }
+
+    #smallusernameInput
+    {     
+        width:100%;            
+        margin-bottom: 3px;
+    }
+
+    #smallpasswordLabel
+    {          
+        width:100%;       
+        margin-bottom: 3px;
+        color: white;
+    }
+
+    #smallpasswordInput
+    {            
+        width:100%;     
+        margin-bottom: 3px;
+    }
+
+    #smallloginButton
+    {         
+        width:100%;     
+        margin-bottom: 3px;   
+    }
+
+    #smallsignupButton
+    {            
+        width:100%;    
+        margin-bottom: 3px; 
+    }
+
+    #smallforgotPassLink
+    {         
+        width:100%;    
+        margin-bottom: 3px;    
+    }       
+
+    .smallScreenDropDownBorder
+    {
+        border-left: 5px groove #054a7f;
+        border-right: 5px groove #054a7f;
+        border-bottom: 5px groove #054a7f;
+        border-radius: 5px;
+    } 
+    .smallScreenSpanText
+    {
+        position: relative;
+        bottom:6px;
+    }
+
+    .largeScreenInfo
+    {
+        display: none;
+    }
+}   
+
+@font-face 
+{
+    font-family: CCLFont;
+    src: url(airborne.ttf);    
+}     
+
+
+*
+{
+    font-family: CCLFont;
+}
+
+#successMessage
+{
+    width: 100%; 
+    text-align: center;   
+    margin-bottom: 10px;  
+    margin-top: 10px;
+    display:none; 
+}
+     
+#errorMessage
+{
+    width: 100%; 
+    text-align: center;   
+    margin-bottom: 10px;  
+    margin-top: 10px;
+    display:none;        
+}
+
+#Colormsg
+{
+    color: white;
+}

@@ -1,0 +1,85 @@
+
+.container
+{
+    width: 1020px;
+    height:100vh;
+    margin: 0px auto;
+    overflow-x:hidden;
+    margin-top: -26px;
+}       
+
+.bodyPosAdj
+{
+    position: relative;
+    top:5px;
+    right:13px;
+}  
+
+#EntirePage
+{
+    margin-top: -20px;
+}       
+
+#MidDecBar
+{
+    margin-left: 95px;
+    width: 1000px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+}
+#topDecBar
+{
+	width: 10000px;
+	margin-left: 2px;
+	height: 20px;
+	position: relative;
+	left :91px;
+}
+
+
+#errorSignUpMessage
+{
+    width: 100%; 
+    text-align: center;   
+    margin-bottom: 10px;  
+    margin-top: 50px;
+    display:none;        
+}
+
+#passwordConfirm
+{
+    width: 100%;
+    float:left;
+}
+
+#signUpInputUsername1
+{
+    width: 100%;
+    float:left;
+    margin-bottom: 10px;
+}
+
+#signUpForm
+{
+    display: center;
+}
+
+#signupDiv
+{
+}
+
+#pageTitle
+{
+    float:left;
+    position: relative;
+    top:25px;
+}
+
+#SignupLabel
+{
+    margin-left: 5px;
+    float: left;
+}      
+
+			
